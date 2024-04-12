@@ -4,6 +4,7 @@ import './App.css';
 import "./global.css"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
+import Culture from "./pages/Culture";
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route Component={Dashboard} path='/' ></Route>
+        <Route Component={Culture} path="/culture/:id"></Route>
       </Routes>
     
     </BrowserRouter>
